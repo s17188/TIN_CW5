@@ -86,6 +86,8 @@ div.forms textarea{
 }
 
 div.forms button{
+    display: block;
+    margin-left: auto;
     padding: 10px 30px;
     border: 0px;
     border-radius: 20px;

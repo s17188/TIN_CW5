@@ -9,4 +9,6 @@ router.post('/:id/completed',todoController.update)
 
 router.post('/:id/delete',todoController.delete)
 
+router.get('/deleteAll',todoController.deleteAllCompleted)
+
 module.exports = router;

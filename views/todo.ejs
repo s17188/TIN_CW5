@@ -16,6 +16,7 @@
                 <input type="text" name="title" required>
                 <button type="submit" class="add">Add</button>
             </form>
+            <button onclick="location.href='/deleteAll'" >Delete all completed</button>
             <% for(var i=0; i < todos.length; i++) { %>
                 <div class="todo">
                   <div class="<%= todos[i].completed %>">

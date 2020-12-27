@@ -51,10 +51,21 @@ exports.update = (req,res) => {
 }
 
 exports.delete = (req,res) =>{
-    console.log('in delete')
     ToDo.remove({
         _id: req.params.id
     }, (err,todo)=>{
+        if (err) {
+            res.render('error',{
+                error: err
+            })
+        }else{
+            res.redirect('/')
+        }
+    })
+}
+
+exports.deleteAllCompleted = (req,res) =>{
+    ToDo.remove({'completed':true}, (err,todo)=>{
         if (err) {
             res.render('error',{
                 error: err
