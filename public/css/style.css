@@ -1,0 +1,124 @@
+html{
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0px;
+    background-image: linear-gradient(to right bottom, #051937, #1f2c6c, #55389f, #9b38c8, #eb12e5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.wrapper{
+    width: 1140px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 40px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: rgba(0, 0, 0, .73);
+    box-shadow: 0 2rem 3rem 0 rgba(50, 50, 50, .7);
+}
+
+.wrapper div{
+    padding: 10px 20px;
+}
+
+.wrapper div.header{
+    padding: 0px;
+}
+
+.wrapper h1{
+    padding-top: 30px;
+    text-align: center;
+}
+
+div.forms form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.forms input{
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+div.forms input[type=text],div.forms input[type=email],div.forms input[type=date],div.forms input[type=number],div.forms select,div.forms input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div.forms input[type=text]:focus,div.forms input[type=email]:focus,div.forms input[type=date]:focus,div.forms input[type=number]:focus,div.forms select:focus,div.forms input[type=password]:focus,div.forms textarea:focus,div.forms button:first-of-type:active {
+    outline: transparent;
+    box-shadow: 0 0 0 2pt rgb(133 50 248);
+}
+
+div.forms input[type="radio"]{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+div.forms select{
+    margin-bottom: 20px;
+}
+
+div.forms textarea{
+    width: 100%;
+    height: 125px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.forms button{
+    padding: 10px 30px;
+    border: 0px;
+    border-radius: 20px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: rgb(133 50 248);
+}
+
+div.forms button:hover{
+    outline: transparent;
+    box-shadow: 0 0 0 2pt rgb(50 60 248 / 44%);
+}
+
+div.forms button.add{
+    outline: transparent;
+    margin-left: 20px;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo .actionWrapper{
+    display: flex;
+}
+
+.todo .actionWrapper .deleteForm{
+    margin-left: 10px;
+}
+
+.todo .true p.desc{
+    text-decoration: line-through;
+}
