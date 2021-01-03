@@ -1,7 +1,7 @@
 ToDo = require('../models/todoModel')
 
 exports.index = (req, res) => {
-    ToDo.get((err, todos) => {
+    ToDo.find((err, todos) => {
         console.log('todos',todos)
         if (err) {
             res.render('error',{

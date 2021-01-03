@@ -15,7 +15,4 @@ const todoSchema = mongoose.Schema({
     }
 });
 
-const ToDo = module.exports = mongoose.model('todo',todoSchema)
-module.exports.get = (callback,limit)=>{
-    ToDo.find(callback).limit(limit);
-}
+module.exports = mongoose.model('todo',todoSchema)
